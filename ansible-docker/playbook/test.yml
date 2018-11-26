@@ -1,0 +1,8 @@
+- name: Test 
+  hosts: host.docker.internal
+  become: true
+
+  tasks:
+    - name: Insert html
+      template: index.html
+      dest: D:\study\hola.htm 
