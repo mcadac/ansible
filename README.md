@@ -12,7 +12,7 @@ Ansible slef study
 1. How to indicate to Ansible that execute process in your host?
 
   - In the inventory file set the next values: 
-      **localhost ansible_connection=localhost**
+      **localhost ansible_connection=local**
 
 ### References
 
@@ -22,6 +22,7 @@ Ansible slef study
 
 #### Ansible commands
 1. ansible all -m ping --> **Validate connection with the hosts**
+2. ansible {sever_or_server_name} -m ping -i {inventory_file} --> **Validate connection with a specific server**
 
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
