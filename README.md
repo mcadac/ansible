@@ -2,13 +2,10 @@
 
 Ansible slef study
 
-## Test
-1. Build docker image 
-	-  docker image build -t ansible-ssh ./
-	
-2. Run container: 
+## Examples
 
-	- docker run -d -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
+1. **SSH service with Docker:** https://github.com/mcadac/ansible/tree/master/ssh-service
+2. **Ansible in a docker container:** https://github.com/mcadac/ansible/tree/master/ansible-docker
 
 
 ### References
@@ -17,6 +14,10 @@ Ansible slef study
 
 ### Commands
 
+#### Ansible commands
+1. ansible all -m ping --> **Validate connection with the hosts**
+
+#### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
 
