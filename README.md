@@ -1,6 +1,14 @@
 # ansible
 Ansible study
 
+## Test
+1. Build docker image 
+	-  docker image build -t ansible-ssh ./
+	
+2. Run container: 
+
+	- docker run -d -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
+
 
 ### References
 
@@ -8,6 +16,6 @@ Ansible study
 
 ### Commands
 
-docker run -it -v "D:\study\ansible\playbook:/tmp/ansible" -v  "D:\study\ansible\playbook\hosts:/etc/ansible/hosts" --name myansible --rm    myansible  bash
+docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
 
