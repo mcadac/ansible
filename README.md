@@ -11,8 +11,13 @@ Ansible slef study
 
 1. How to indicate to Ansible that execute process in your host?
 
-  - In the inventory file set the next values: 
+    - In the inventory file set the next values: 
       **localhost ansible_connection=local**
+
+2. Connection plugin to connect a windows server
+
+    - In the inventory file set the next values: 
+      **server ansible_connection=winrm**
 
 ### References
 
