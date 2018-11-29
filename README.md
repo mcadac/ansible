@@ -142,5 +142,6 @@ docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v 
 
 1. Ansible examples: https://github.com/ansible/ansible-examples
 2. Course: https://naspers.udemy.com/learn-ansible
+3. https://github.com/mmumshad/ansible-playable
 
 
