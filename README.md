@@ -28,6 +28,7 @@ Ansible slef study
 #### Ansible commands
 1. ansible all -m ping --> **Validate connection with the hosts**
 2. ansible {sever_or_server_name} -m ping -i {inventory_file} --> **Validate connection with a specific server**
+3. ansible-plabook {playbook_file_name} -i {inventory_file} --> **Execute a plabook**
 
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
