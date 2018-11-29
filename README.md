@@ -66,7 +66,16 @@ Ansible slef study
           title: "Systems Engineer"
         tasks:
     ```
- 
+ 5. To add an conditional statement to a task (You can use 'or' to add other conditional)
+    ```
+    -
+      name: Execute a script on all web server nodes
+      hosts: all_servers
+      tasks:
+        -
+          service: name=mysql state=started
+          when: ansible_host == 'server4.company.com'
+    ```
   
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
