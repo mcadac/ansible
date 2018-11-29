@@ -32,10 +32,10 @@ Ansible slef study
 
 ### Plays and Tasks
 1. To create a directory and check if exist,  we can use the next form in the task:
-    ...
+    `
     name: Create a directory with check
     command: mkdir /folder creates=/folder
-    ...
+    `
 
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
