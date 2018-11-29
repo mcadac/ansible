@@ -109,7 +109,36 @@ Ansible slef study
           command: echo "{{ item }}"
           with_items: '{{fruits }}'
     ```
+   Another example with the yuml loop module (Ansible module)  
+    
+    ```
+    -
+      name: Install required packages
+      hosts: localhost
+      vars:
+          packages:
+          - httpd
+          - binutils
+          - glibc
+          - ksh
+          - libaio
+          - libXext
+          - gcc
+          - make
+          - sysstat
+          - unixODBC
+          - mongodb
+          - nodejs
+          - grunt
+
+  tasks:
+    -
+      yum: name='{{ item }}' state=present
+      with_items: '{{packages}}'
+    
+    ```
   
+
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
