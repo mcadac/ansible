@@ -47,7 +47,14 @@ Ansible slef study
        name: Execute a file but before it change the location
        command: cat playbook-copy.yml chdir=/tmp/ansible/ansible-docker
     ```
+3. To add a new line in a file
 
+    ```
+      -
+        lineinfile:
+            path: /tmp/ansible/exercise-2/result-copy.txt
+            line: 'The new line in the file from ansible'
+    ```
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
