@@ -31,12 +31,21 @@ Ansible slef study
 3. ansible-plabook {playbook_file_name} -i {inventory_file} --> **Execute a plabook**
 
 ### Plays and Tasks
+
 1. To create a directory and check if exist,  we can use the next form in the task:
     ```
     ...
      name: Create a directory with check
      command: mkdir /folder creates=/folder
     ...
+    ```
+
+2. To changes current folder before to execute the task
+
+    ```
+    ...
+       name: Execute a file but before it change the location
+       command: cat playbook-copy.yml chdir=/tmp/ansible/ansible-docker
     ```
 
 #### Other commands
