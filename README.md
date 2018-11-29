@@ -127,10 +127,10 @@ Ansible slef study
           - nodejs
           - grunt
 
-  tasks:
-    -
-      yum: name='{{ item }}' state=present
-      with_items: '{{packages}}'
+      tasks:
+        -
+          yum: name='{{ item }}' state=present
+          with_items: '{{packages}}'
     
     ```
   
