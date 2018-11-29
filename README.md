@@ -55,6 +55,19 @@ Ansible slef study
             path: /tmp/ansible/exercise-2/result-copy.txt
             line: 'The new line in the file from ansible'
     ```
+ 4. To add variables in the same playbook file
+    
+    ```
+        name: Update nameserver entry into resolv.conf file on localhost
+        hosts: localhost
+        vars:
+          car_model: "BMW M3"
+          country_name: USA
+          title: "Systems Engineer"
+        tasks:
+    ```
+ 
+  
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
