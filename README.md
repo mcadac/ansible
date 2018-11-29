@@ -76,6 +76,22 @@ Ansible slef study
           service: name=mysql state=started
           when: ansible_host == 'server4.company.com'
     ```
+    
+    ```
+    -
+      name: Am in an Adult or a Child
+      hosts: localhost
+      vars:
+        age: 25
+      tasks:
+        -
+          command: echo "I am a Child"
+          when: age < 18
+
+        -
+          command: echo "I am an Adult"
+          when: age >= 18
+    ```
   
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
