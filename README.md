@@ -19,10 +19,6 @@ Ansible slef study
     - In the inventory file set the next values: 
       **server ansible_connection=winrm**
 
-### References
-
-1. Ansible examples: https://github.com/ansible/ansible-examples
-
 ### Commands
 
 #### Ansible commands
@@ -141,5 +137,9 @@ Ansible slef study
 
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
+
+### References
+
+1. Ansible examples: https://github.com/ansible/ansible-examples
 
 
