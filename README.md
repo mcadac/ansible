@@ -93,6 +93,23 @@ Ansible slef study
           when: age >= 18
     ```
   
+  6. To use a loop in a task
+  
+    ```
+    -
+      hosts: localhost
+      vars:
+          fruits:
+            - Apple
+            - Banana
+            - Grapes
+            - Orange
+      tasks:
+        -
+          command: echo "{{ item }}"
+          with_items: '{{fruits }}'
+    ```
+  
 #### Other commands
 docker run -it -P -v "D:\study\ansible\ansible-docker\playbook:/tmp/ansible" -v  "D:\study\ansible\ansible-docker\playbook\hosts:/etc/ansible/hosts" --name ansible-test --rm  ansible-ssh  bash
 
