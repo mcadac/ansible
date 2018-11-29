@@ -30,7 +30,7 @@ Ansible slef study
 2. ansible {sever_or_server_name} -m ping -i {inventory_file} --> **Validate connection with a specific server**
 3. ansible-plabook {playbook_file_name} -i {inventory_file} --> **Execute a plabook**
 
-### Plays and Tasks
+### Plays and Tasks examples (These were tested)
 
 1. To create a directory and check if exist,  we can use the next form in the task:
     ```
