@@ -33,8 +33,10 @@ Ansible slef study
 ### Plays and Tasks
 1. To create a directory and check if exist,  we can use the next form in the task:
     ```
-    name: Create a directory with check
-    command: mkdir /folder creates=/folder
+    ...
+     name: Create a directory with check
+     command: mkdir /folder creates=/folder
+    ...
     ```
 
 #### Other commands
